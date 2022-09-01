@@ -1,0 +1,54 @@
+<nav class="bg-gray-800">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <div class="flex items-center">
+        <div class="flex-shrink-0">
+          <a href="<%= root_path %>" class="text-white text-2xl">Starter Kit</h2>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-8 flex items-baseline space-x-4">
+            <a href="<%= root_path %>" class="<%= nav_link_class("home") %>">Home</a>
+            <a href="<%= articles_path %>" class="<%= nav_link_class("articles") %>">Articles</a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="ml-4 flex items-center md:ml-6">
+          <div class="relative ml-3">
+            <% if user_signed_in? %>
+              <a href="<%= edit_user_path %>" class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <img class="h-8 w-8 rounded-full" src="<%= avatar_url(current_user.email) %>">
+              </a>
+            <% else %>
+              <%= link_to "Sign in", new_user_session_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="md:hidden">
+    <div class="space-y-1 px-2 pb-3 sm:px-3">
+      <a href="<%= root_path %>" class="<%= nav_link_class("home", "block") %>">Home</a>
+      <a href="<%= articles_path %>" class="<%= nav_link_class("articles", "block") %>">Articles</a>
+    </div>
+    <div class="border-t border-gray-700 pt-4 pb-3">
+      <% if user_signed_in? %>
+        <a href="<%= edit_user_path %>">
+          <div class="flex items-center px-5">
+            <div class="flex-shrink-0">
+              <img class="h-10 w-10 rounded-full" src="<%= avatar_url(current_user.email) %>">
+            </div>
+            <div class="ml-3">
+              <div class="text-base font-medium leading-none text-white"><%= current_user.name %></div>
+              <div class="text-sm font-medium leading-none text-gray-400"><%= current_user.email %></div>
+            </div>
+          </div>
+        </a>
+      <% else %>
+        <%= link_to "Sign in", new_user_session_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <% end %>
+    </div>
+  </div>
+</nav>

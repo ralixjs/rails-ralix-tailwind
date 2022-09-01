@@ -1,0 +1,27 @@
+<div class="flex items-center justify-between">
+  <h1>Articles</h1>
+  <%= link_to "+ New article", new_article_path, class: 'btn' %>
+</div>
+
+<div class="mt-8">
+  <% @articles.each do |article| %>
+    <article class="w-full rounded bg-white my-4 p-4">
+      <h4>
+        <%= link_to article.title, article, class: 'text-xl font-bold text-gray-900' %>
+      </h4>
+      <p class="text-sm text-slate-400">
+        <%= author_and_date(article) %>
+      </p>
+      <div class="text-slate-600 my-2">
+        <%= truncate article.body, length: 160 %>
+      </div>
+      <div class="mt-8 mb-4">
+        <%= link_to 'Read more', article, class: 'btn btn-outline' %>
+      </p>
+    </article>
+  <% end %>
+
+  <div class="text-center mt-8">
+    <%== pagy_nav(@pagy) %>
+  </div>
+</div>

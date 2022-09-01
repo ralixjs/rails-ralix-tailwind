@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= page_title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="icon" href="/favicon.ico">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body class="<%= body_class %>">
+    <%= render "application/header" %>
+    <%= render 'application/flash_messages' %>
+    <main>
+      <div class="mx-auto p-4 md:p-8">
+        <%= yield %>
+      </div>
+    </main>
+    <%= render "application/footer" %>
+  </body>
+</html>

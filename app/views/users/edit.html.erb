@@ -1,0 +1,43 @@
+<h1>My account</h1>
+
+<div class="mb-4">
+  <%= image_tag avatar_url(current_user.email, 120), class: "rounded-full" %>
+</div>
+
+<%= form_with(model: current_user) do |form| %>
+  <%= render "application/error_messages", object: current_user %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div class="form-actions">
+    <%= form.submit nil, class: 'btn' %>
+  </div>
+<% end %>
+
+<div class="mt-8">
+  <p>Sign out from my account.</p>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline" %>
+</div>
+
+<div class="mt-8">
+  <p>Be careful! This action is irreversible.</p>
+  <%= button_to "Delete my account", current_user, method: :delete, class: "btn btn-danger" %>
+</div>

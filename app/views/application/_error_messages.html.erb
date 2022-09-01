@@ -1,0 +1,11 @@
+<% if object.errors.any? %>
+  <div class="my-4 p-4 bg-red-400 text-white rounded">
+    <b class="text-xl"><%= pluralize(object.errors.count, "error") %> found:</b>
+
+    <ul>
+      <% object.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

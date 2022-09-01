@@ -1,0 +1,13 @@
+<h1><%= @article.title %></h1>
+
+<p class="text-sm text-slate-400">
+  <%= author_and_date(@article) %>
+</p>
+
+<div class="my-6">
+  <%= @article.body %>
+</div>
+
+<div class="form-actions">
+  <%= link_to "Edit", edit_article_path(@article), class: 'btn' %>
+</div>

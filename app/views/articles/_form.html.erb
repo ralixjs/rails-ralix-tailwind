@@ -1,0 +1,17 @@
+<%= form_with(model: article) do |form| %>
+  <%= render "application/error_messages", object: article %>
+
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body %>
+    <%= form.text_area :body, rows: 10 %>
+  </div>
+
+  <div class="mt-4">
+    <%= form.submit nil, class: 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Editing article</h1>
+
+<%= render "form", article: @article %>
+
+<div class="mt-8">
+  <p>Be careful! This action is irreversible.</p>
+  <%= button_to "Destroy", @article, method: :delete, class: "btn btn-danger" %>
+</div>

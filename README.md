@@ -4,18 +4,18 @@
 
 Powered by:
 
-- [Rails 7](https://rubyonrails.org)
+- [Rails](https://rubyonrails.org)
 - [Ralix](https://github.com/ralixjs/ralix)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Turbo](https://turbo.hotwired.dev)
 - [esbuild](https://esbuild.github.io)
 
-Rails 7 application template ready to start building your project with a pre-configured modern front-end stack and some extras like:
+Rails v7 application template ready to start building your next project, with a pre-configured modern front-end stack and some extras:
 
 - 🎨 Minimalistic and clean layout
 - 🔐 Authentication, via [Devise](https://github.com/heartcombo/devise)
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
-- 🚨 Error pages
+- 🔴 Custom errors pages (404, 422, 500)
 
 ## Install
 

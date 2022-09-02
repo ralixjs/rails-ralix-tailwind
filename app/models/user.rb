@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :articles, dependent: :destroy
 
   def name
-    @name ||= self[:name] || email.split("@").first
+    @name ||= self[:name].presence || email.split("@").first
   end
 
   protected

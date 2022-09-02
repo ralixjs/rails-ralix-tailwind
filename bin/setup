@@ -14,7 +14,7 @@ FileUtils.chdir APP_ROOT do
   system! "gem install bundler --conservative"
   system("bundle check") || system!("bundle install")
 
-  puts "== Installing front-end dependencies =="
+  puts "\n== Installing front-end dependencies =="
   system! "yarn install"
 
   puts "\n== Preparing database =="

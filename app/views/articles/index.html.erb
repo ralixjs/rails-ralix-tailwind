@@ -3,12 +3,12 @@
   <%= link_to "+ New article", new_article_path, class: 'btn' %>
 </div>
 
-<div class="mt-8">
+<div class="mt-8 grid sm:grid-cols-2 gap-8">
   <% @articles.each do |article| %>
-    <article class="w-full rounded bg-white my-4 p-4">
-      <h4>
+    <article class="w-full rounded bg-white p-4">
+      <h3>
         <%= link_to article.title, article, class: 'text-xl font-bold text-gray-900' %>
-      </h4>
+      </h3>
       <p class="text-sm text-slate-400">
         <%= author_and_date(article) %>
       </p>
@@ -20,8 +20,8 @@
       </p>
     </article>
   <% end %>
+</div>
 
-  <div class="text-center mt-8">
-    <%== pagy_nav(@pagy) %>
-  </div>
+<div class="text-center mt-8">
+  <%== pagy_nav(@pagy) %>
 </div>

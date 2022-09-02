@@ -12,7 +12,11 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl font-bold mt-2 my-4;
+  @apply text-3xl font-bold mt-2 my-4;
+}
+
+h3 {
+  @apply text-2xl font-bold my-2;
 }
 
 a {
@@ -43,7 +47,7 @@ a {
 /* Forms */
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea {
   @apply mt-2 mb-4 block rounded focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
-  width: 500px;
+  width: 100%;
 }
 
 .form-actions {

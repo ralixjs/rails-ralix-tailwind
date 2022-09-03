@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
 
   def index
-    @pagy, @articles = pagy(Article.order(created_at: :desc), items: 4)
+    @q = Article.ransack(params[:q])
+    @pagy, @articles = pagy(@q.result, items: 4)
   end
 
   def show

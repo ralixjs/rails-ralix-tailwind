@@ -13,8 +13,10 @@ Powered by:
 Rails v7 application template ready to start building your next project, with a pre-configured modern front-end stack and some extras:
 
 - 🎨 Minimalistic and clean layout
+- 📦 Icon pack, via [Heroicons](https://heroicons.com)
 - 🔐 Authentication, via [Devise](https://github.com/heartcombo/devise)
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
+- 👀 Searching, via [Ransack](https://github.com/activerecord-hackery/ransack)
 - 🔴 Custom errors pages (404, 422, 500)
 
 ## Install

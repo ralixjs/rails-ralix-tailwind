@@ -1,5 +1,9 @@
 export default class AppCtrl {
   constructor() {
-    console.log("App controller")
+    this.isMobile = /Mobi/.test(navigator.userAgent)
+  }
+
+  closeFlashAlert() {
+    currentElement().parentElement.remove()
   }
 }

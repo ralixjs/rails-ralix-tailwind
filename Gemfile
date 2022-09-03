@@ -8,6 +8,7 @@ gem "puma", "~> 5.0"
 gem "bootsnap", require: false
 gem "devise", "~> 4.8"
 gem "pagy", "~> 5.10"
+gem "ransack", "~> 3.2"
 gem "faker", "~> 2"
 
 # Front-end
@@ -15,6 +16,7 @@ gem "sprockets-rails"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "turbo-rails"
+gem "heroicon"
 
 group :development do
   gem "web-console"

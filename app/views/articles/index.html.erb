@@ -1,27 +1,41 @@
 <div class="flex items-center justify-between">
   <h1>Articles</h1>
-  <%= link_to "+ New article", new_article_path, class: 'btn' %>
-</div>
-
-<div class="mt-8 grid sm:grid-cols-2 gap-8">
-  <% @articles.each do |article| %>
-    <article class="w-full rounded bg-white p-4">
-      <h3>
-        <%= link_to article.title, article, class: 'text-xl font-bold text-gray-900' %>
-      </h3>
-      <p class="text-sm text-slate-400">
-        <%= author_and_date(article) %>
-      </p>
-      <div class="text-slate-600 my-2">
-        <%= truncate article.body, length: 160 %>
-      </div>
-      <div class="mt-8 mb-4">
-        <%= link_to 'Read more', article, class: 'btn btn-outline' %>
-      </p>
-    </article>
+  <%= link_to new_article_path, class: 'btn' do %>
+    <%= heroicon "plus" %>
+    New article
   <% end %>
 </div>
 
-<div class="text-center mt-10">
-  <%== pagy_nav(@pagy) %>
-</div>
+<%= search_form_for @q, data: { turbo_frame: "search" } do |f| %>
+  <div class="relative">
+    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+      <%= heroicon "magnifying-glass" %>
+    </div>
+    <%= f.text_field :title_or_body_cont, class: "search-input block p-3 pl-10 text-sm text-gray-900 bg-gray-50", onkeyup: "search()", placeholder: "Search ..." %>
+  </div>
+<% end %>
+
+<%= turbo_frame_tag "search", target: "_top" do %>
+  <div class="mt-8 grid sm:grid-cols-2 gap-8">
+    <% @articles.each do |article| %>
+      <article class="w-full rounded bg-white p-4">
+        <h3>
+          <%= link_to article.title, article, class: 'text-xl font-bold text-gray-900' %>
+        </h3>
+        <p class="text-sm text-slate-400">
+          <%= author_and_date(article) %>
+        </p>
+        <div class="text-slate-600 my-2">
+          <%= truncate article.body, length: 160 %>
+        </div>
+        <div class="mt-8 mb-4">
+          <%= link_to 'Read more', article, class: 'btn btn-outline' %>
+        </p>
+      </article>
+    <% end %>
+  </div>
+
+  <div class="text-center mt-10">
+    <%== pagy_nav(@pagy) %>
+  </div>
+<% end %>

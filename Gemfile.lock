@@ -90,6 +90,8 @@ GEM
       i18n (>= 1.8.11, < 2)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    heroicon (1.0.0)
+      rails (>= 5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
@@ -160,6 +162,10 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ransack (3.2.1)
+      activerecord (>= 6.1.5)
+      activesupport (>= 6.1.5)
+      i18n
     reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
@@ -203,10 +209,12 @@ DEPENDENCIES
   debug
   devise (~> 4.8)
   faker (~> 2)
+  heroicon
   jsbundling-rails
   pagy (~> 5.10)
   puma (~> 5.0)
   rails (~> 7.0.3)
+  ransack (~> 3.2)
   sprockets-rails
   sqlite3 (~> 1.4)
   turbo-rails

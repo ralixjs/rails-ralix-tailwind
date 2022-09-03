@@ -1,5 +1,6 @@
 module ApplicationHelper
   include Pagy::Frontend
+  include Heroicon::Engine.helpers
 
   def page_title
     "Rails + Ralix + Tailwind | #{controller_name.humanize}"

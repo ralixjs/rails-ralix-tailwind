@@ -8,7 +8,7 @@ import ArticlesCtrl from './controllers/articles'
 
 const App = new RalixApp({
   routes: {
-    '/articles': ArticlesCtrl,
+    '/articles$': ArticlesCtrl,
     '/.*': AppCtrl
   }
 })

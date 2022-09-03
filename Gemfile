@@ -7,8 +7,8 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem "bootsnap", require: false
 gem "devise", "~> 4.8"
-gem "pagy", "~> 5.10"
 gem "ransack", "~> 3.2"
+gem "pagy", "~> 5.10"
 gem "faker", "~> 2"
 
 # Front-end

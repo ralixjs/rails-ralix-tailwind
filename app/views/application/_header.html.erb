@@ -16,7 +16,7 @@
         <div class="ml-4 flex items-center md:ml-6">
           <div class="relative ml-3">
             <% if user_signed_in? %>
-              <a href="<%= edit_user_path %>" class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-gray-800">
+              <a href="<%= edit_user_path %>" class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm">
                 <img class="h-8 w-8 rounded-full" src="<%= avatar_url(current_user.email) %>">
               </a>
             <% else %>
@@ -25,11 +25,16 @@
           </div>
         </div>
       </div>
+      <div class="sm:hidden">
+        <button class="<%= nav_link_class(nil) %>" onclick="toggleMenu()">
+          <%= heroicon "bars-3" %>
+        </button>
+      </div>
     </div>
   </div>
 
-  <div class="sm:hidden">
-    <div class="space-y-1 px-2 pb-3 sm:px-3">
+  <div class="sm:hidden hidden mobile-menu">
+    <div class="space-y-2 px-2 pb-3 sm:px-3">
       <a href="<%= root_path %>" class="<%= nav_link_class("home", "block") %>">Home</a>
       <a href="<%= articles_path %>" class="<%= nav_link_class("articles", "block") %>">Articles</a>
       <% unless user_signed_in? %>
@@ -37,7 +42,7 @@
       <% end %>
     </div>
     <% if user_signed_in? %>
-      <div class="border-t border-gray-700 pt-4 pb-3">
+      <div class="border-t border-gray-700 py-4">
         <a href="<%= edit_user_path %>">
           <div class="flex items-center px-5">
             <div class="flex-shrink-0">

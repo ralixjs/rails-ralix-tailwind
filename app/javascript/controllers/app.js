@@ -3,6 +3,10 @@ export default class AppCtrl {
     this.isMobile = /Mobi/.test(navigator.userAgent)
   }
 
+  toggleMenu() {
+    toggleClass('.mobile-menu', 'hidden')
+  }
+
   closeFlashAlert() {
     currentElement().parentElement.remove()
   }

@@ -48,6 +48,7 @@ a {
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea {
   @apply mt-2 mb-4 block rounded focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
   width: 100%;
+  max-width: 500px;
 }
 
 .form-actions {

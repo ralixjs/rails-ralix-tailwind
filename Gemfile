@@ -7,6 +7,7 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem "bootsnap", require: false
 gem "devise", "~> 4.8"
+gem "ransack", "~> 3.2"
 gem "pagy", "~> 5.10"
 gem "faker", "~> 2"
 
@@ -15,6 +16,7 @@ gem "sprockets-rails"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "turbo-rails"
+gem "heroicon"
 
 group :development do
   gem "web-console"

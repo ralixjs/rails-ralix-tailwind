@@ -2,11 +2,11 @@
   <div class="border-t border-slate-900/5 py-5">
     <p class="mt-5 text-center text-sm leading-6 text-slate-500">© <%= Time.now.year %> Ralix Core Team. All rights reserved.</p>
     <div class="mt-5 flex items-center justify-center space-x-4 text-sm font-semibold leading-6">
-      <a href="#">About us</a>
+      <%= link_to "About us", page_path(:about) %>
       <div class="h-4 w-px bg-slate-500/20"></div>
-      <a href="#">Terms</a>
+      <%= link_to "Terms", page_path(:terms) %>
       <div class="h-4 w-px bg-slate-500/20"></div>
-      <a href="#">Privacy policy</a>
+      <%= link_to "Privacy policy", page_path(:privacy_policy) %>
     </div>
   </div>
 </footer>

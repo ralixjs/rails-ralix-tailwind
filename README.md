@@ -17,6 +17,7 @@ Rails v7 application template ready to start building your next project, with a 
 - 🔐 Authentication, via [Devise](https://github.com/heartcombo/devise)
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
 - 👀 Searching, via [Ransack](https://github.com/activerecord-hackery/ransack)
+- 📄 Static pages (About, Pricing, Terms, ...)
 - 🔴 Custom errors pages (404, 422, 500)
 
 ## Install

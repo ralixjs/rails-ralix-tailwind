@@ -15,20 +15,15 @@ Rails v7 application template ready to start building your next project, with a 
 - 🎨 Minimalistic and clean layout
 - 📦 Icon pack, via [Heroicons](https://heroicons.com)
 - 🔐 Authentication, via [Devise](https://github.com/heartcombo/devise)
-- 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
+- 👥 Authorization, via [CanCanCan](https://github.com/CanCanCommunity/cancancan)
 - 👀 Searching, via [Ransack](https://github.com/activerecord-hackery/ransack)
+- 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
 - 📄 Static pages (About, Pricing, Terms, ...)
 - 🔴 Custom errors pages (404, 422, 500)
 
 ## Install
 
-### Requirements
-
-- Ruby
-- Node.js
-- Yarn
-
-Clone this repository (or use the GitHub *template* button), then `cd` into the folder and install all dependencies:
+Clone this repository (or use the GitHub *template* button), then `cd` into the folder and run:
 
 ```
 > bin/setup

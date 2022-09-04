@@ -1,5 +1,5 @@
 if User.none?
-  3.times do
+  5.times do
     User.create!(
       name: Faker::Name.name,
       email: Faker::Internet.email,
@@ -9,7 +9,7 @@ if User.none?
 end
 
 if Article.none?
-  10.times do
+  20.times do
     Article.create!(
       title: Faker::Commerce.product_name,
       body: Faker::Lorem.paragraphs(number: 5).join,

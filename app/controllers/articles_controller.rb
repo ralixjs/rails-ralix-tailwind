@@ -2,6 +2,8 @@ class ArticlesController < ApplicationController
   before_action :authenticate_user!, only: %i[new create edit update destroy]
   before_action :set_article, only: %i[show edit update destroy]
 
+  authorize_resource
+
   def index
     @q = Article.ransack(params[:q])
     @pagy, @articles = pagy(@q.result.order(created_at: :desc), items: 4)

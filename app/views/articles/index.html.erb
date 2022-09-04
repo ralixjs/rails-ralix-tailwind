@@ -18,9 +18,9 @@
 <%= turbo_frame_tag "search", target: "_top" do %>
   <div class="mt-8 grid sm:grid-cols-2 gap-8">
     <% @articles.each do |article| %>
-      <article class="w-full rounded bg-white p-4">
+      <article class="rounded bg-white p-4">
         <h3>
-          <%= link_to article.title, article, class: 'text-xl font-bold text-gray-900' %>
+          <%= link_to article.title, article, class: 'text-gray-900' %>
         </h3>
         <p class="text-sm text-slate-400">
           <%= author_and_date(article) %>

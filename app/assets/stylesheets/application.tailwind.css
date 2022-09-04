@@ -68,3 +68,8 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea 
 .pagination .page.active {
   @apply bg-indigo-600 text-white rounded;
 }
+
+/* Turbo */
+.turbo-progress-bar {
+  @apply h-1 bg-indigo-600;
+}

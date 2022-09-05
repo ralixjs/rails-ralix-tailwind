@@ -18,7 +18,7 @@ Rails v7 application template ready to start building your next project, with a 
 - 👥 Authorization, via [CanCanCan](https://github.com/CanCanCommunity/cancancan)
 - 🔍 Searching, via [Ransack](https://github.com/activerecord-hackery/ransack)
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
-- 📄 Static pages (About, Pricing, Terms, ...)
+- 📄 Static pages controller (About, Terms, ...)
 - 🔴 Custom errors pages (404, 422, 500)
 
 ## Install

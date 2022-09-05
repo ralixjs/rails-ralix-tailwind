@@ -37,11 +37,11 @@ a {
 }
 
 .btn-danger {
-  @apply bg-transparent border-red-400 text-red-400;
+  @apply bg-transparent border-red-500 text-red-500;
 }
 
 .btn-danger:hover {
-  @apply bg-red-400 text-white;
+  @apply bg-red-500 text-white;
 }
 
 .btn svg {

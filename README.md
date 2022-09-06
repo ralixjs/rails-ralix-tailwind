@@ -7,6 +7,7 @@ Powered by:
 - [Rails](https://rubyonrails.org)
 - [Ralix](https://github.com/ralixjs/ralix)
 - [Tailwind CSS](https://tailwindcss.com)
+- [PostgreSQL](https://www.postgresql.org)
 - [Turbo](https://turbo.hotwired.dev)
 - [esbuild](https://esbuild.github.io)
 

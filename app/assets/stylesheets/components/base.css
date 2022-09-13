@@ -1,5 +1,5 @@
 body {
-  @apply bg-slate-100;
+  @apply bg-slate-100 leading-relaxed;
 }
 
 h1 {
@@ -12,6 +12,10 @@ h2 {
 
 h3 {
   @apply text-2xl font-bold my-2;
+}
+
+p {
+  @apply mt-2 mb-3;
 }
 
 a {

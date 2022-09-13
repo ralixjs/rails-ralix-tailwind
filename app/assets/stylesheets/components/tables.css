@@ -14,6 +14,6 @@ table th, table td {
   @apply py-4 px-6;
 }
 
-table td img {
+table img {
   min-width: 30px;
 }

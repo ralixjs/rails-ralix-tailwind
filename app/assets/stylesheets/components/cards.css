@@ -1,0 +1,19 @@
+.card {
+  @apply rounded bg-white p-4;
+}
+
+.card-title a {
+  @apply text-gray-900;
+}
+
+.card-subtitle {
+  @apply text-sm text-slate-400;
+}
+
+.card-body {
+  @apply text-slate-600 my-2;
+}
+
+.card-actions {
+  @apply mt-8 mb-4;
+}

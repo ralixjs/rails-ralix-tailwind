@@ -27,7 +27,7 @@
             <%= time_ago user.created_at %>
           </td>
           <td>
-            <a data-modal-url="<%= user_path(user) %>" data-modal-title="User details" class="btn btn-outline">Details</a>
+            <a data-modal-url="<%= "/users/#{user.id}" %>" data-modal-title="User details" class="btn btn-outline">Details</a>
           </td>
         </tr>
       <% end %>

@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :articles
-  resources :users, only: %i[index show]
   resource :user, only: %i[edit update destroy]
+  resources :users, only: %i[index show]
 
   get "/pages/:page" => "pages#show", as: :page
 

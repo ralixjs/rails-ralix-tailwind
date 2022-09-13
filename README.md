@@ -21,7 +21,7 @@ Rails v7 application template ready to start building your next project, with a 
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
 - 📄 Static pages controller (About, Terms, ...)
 - 🔴 Custom errors pages (404, 422, 500)
-- 📚 Ready to use components: Tables, Buttons, Forms, Modals, Tooltips
+- 📚 Ready to use components: Tables, Buttons, Forms, Cards, Modals, Tooltips
 
 ## Install
 

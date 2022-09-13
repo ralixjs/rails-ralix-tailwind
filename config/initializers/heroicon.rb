@@ -1,6 +1,6 @@
 Heroicon.configure do |config|
-  config.variant = :solid
+  config.variant = :outline
   config.default_class = {
-    solid: "w-5 h-5 inline"
+    outline: "w-5 h-5 inline"
   }
 end

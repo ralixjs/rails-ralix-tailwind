@@ -116,7 +116,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea 
 .modal-container {
   background-color: #fff;
   padding: 30px;
-  min-width: 400px;
+  min-width: 450px;
   max-width: 650px;
   max-height: 90vh;
   border-radius: 4px;

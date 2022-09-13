@@ -1,0 +1,19 @@
+table {
+  @apply w-full text-sm text-left;
+}
+
+table thead {
+  @apply text-xs uppercase bg-slate-200;
+}
+
+table tbody {
+  @apply bg-white;
+}
+
+table th, table td {
+  @apply py-4 px-6;
+}
+
+table td img {
+  min-width: 30px;
+}

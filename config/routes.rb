@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :articles
+  resources :users, only: %i[index show]
   resource :user, only: %i[edit update destroy]
 
   get "/pages/:page" => "pages#show", as: :page

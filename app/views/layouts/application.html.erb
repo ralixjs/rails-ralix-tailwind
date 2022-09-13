@@ -12,12 +12,13 @@
 
   <body class="<%= body_class %>">
     <%= render "application/header" %>
-    <%= render 'application/flash_messages' %>
+    <%= render "application/flash_messages" %>
     <main>
       <div class="mx-auto p-6 md:px-12">
         <%= yield %>
       </div>
     </main>
     <%= render "application/footer" %>
+    <%= render "application/remote_modal" %>
   </body>
 </html>

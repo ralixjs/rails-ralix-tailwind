@@ -1,5 +1,5 @@
 if User.none?
-  5.times do
+  10.times do
     User.create!(
       name: Faker::Name.name,
       email: Faker::Internet.email,

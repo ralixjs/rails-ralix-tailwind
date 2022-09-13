@@ -1,0 +1,40 @@
+<h1>Users</h1>
+
+<div class="mt-8 overflow-x-auto relative">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Created at</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td>
+            <img class="rounded-full" src="<%= avatar_url(user.email, 50) %>">
+          </td>
+          <td>
+            <%= user.name %>
+          </td>
+          <td>
+            <%= mail_to user.email, 'data-tippy-content': 'Click to send an email' %>
+          </td>
+          <td>
+            <%= time_ago user.created_at %>
+          </td>
+          <td>
+            <a data-modal-url="<%= user_path(user) %>" data-modal-title="User details" class="btn btn-outline">Details</a>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="text-center mt-10">
+  <%== pagy_nav(@pagy) %>
+</div>

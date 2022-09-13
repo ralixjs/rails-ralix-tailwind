@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resource :user, only: %i[edit update destroy]
+  resources :users, only: %i[index show]
 
   get "/pages/:page" => "pages#show", as: :page
 

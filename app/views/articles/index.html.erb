@@ -18,17 +18,17 @@
 <%= turbo_frame_tag "search", target: "_top" do %>
   <div class="mt-8 grid sm:grid-cols-2 gap-8">
     <% @articles.each do |article| %>
-      <article class="rounded bg-white p-4">
-        <h3>
-          <%= link_to article.title, article, class: 'text-gray-900' %>
+      <article class="card">
+        <h3 class="card-title">
+          <%= link_to article.title, article %>
         </h3>
-        <p class="text-sm text-slate-400">
+        <p class="card-subtitle">
           <%= author_and_date(article) %>
         </p>
-        <div class="text-slate-600 my-2">
+        <div class="card-body">
           <%= truncate article.body, length: 160 %>
         </div>
-        <div class="mt-8 mb-4">
+        <div class="card-actions">
           <%= link_to 'Read more', article, class: 'btn btn-outline' %>
         </p>
       </article>

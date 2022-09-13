@@ -1,0 +1,20 @@
+<img class="rounded-full mx-auto" src="<%= avatar_url(@user.email, 150) %>">
+
+<div class="my-4 text-center">
+  <p class="text-2xl"><%= @user.name %></p>
+  <p><%= mail_to @user.email %></p>
+</div>
+
+<div class="my-2">
+  <p>
+    <b>Created at</b>
+    <%= time_ago @user.created_at %>
+    <span class="text-xs text-slate-500"><%= @user.created_at.strftime('%Y-%m-%d %H:%M') %></span>
+  </p>
+  <p>
+    <b>Updated at</b>
+    <%= time_ago @user.updated_at %>
+    <span class="text-xs text-slate-500"><%= @user.updated_at.strftime('%Y-%m-%d %H:%M') %></span>
+  </p>
+  <p><b>Articles</b> <%= @user.articles.size %></p>
+</div>

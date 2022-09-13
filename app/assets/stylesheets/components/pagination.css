@@ -1,0 +1,7 @@
+.pagination .page {
+  @apply text-xl p-2;
+}
+
+.pagination .page.active {
+  @apply bg-indigo-600 text-white rounded;
+}

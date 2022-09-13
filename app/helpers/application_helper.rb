@@ -17,4 +17,8 @@ module ApplicationHelper
       "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium #{extra}"
     end
   end
+
+  def time_ago(time_object)
+    "#{time_ago_in_words(time_object)} ago"
+  end
 end

@@ -1,0 +1,9 @@
+/* Turbo */
+.turbo-progress-bar {
+  @apply h-1 bg-indigo-600;
+}
+
+/* Tippy */
+.tippy-box {
+  @apply bg-gray-800;
+}

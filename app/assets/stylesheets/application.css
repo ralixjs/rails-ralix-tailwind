@@ -1,0 +1,15 @@
+/* Dependencies */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tippy.js/dist/tippy.css';
+
+/* Components */
+@import 'components/base.css';
+@import 'components/modals.css';
+@import 'components/tables.css';
+@import 'components/buttons.css';
+@import 'components/forms.css';
+@import 'components/cards.css';
+@import 'components/pagination.css';
+@import 'components/overrides.css';

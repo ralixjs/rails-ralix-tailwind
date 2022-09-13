@@ -9,6 +9,7 @@
           <div class="ml-8 flex items-baseline space-x-4">
             <a href="<%= root_path %>" class="<%= nav_link_class("home") %>">Home</a>
             <a href="<%= articles_path %>" class="<%= nav_link_class("articles") %>">Articles</a>
+            <a href="<%= users_path %>" class="<%= nav_link_class("users") %>">Users</a>
           </div>
         </div>
       </div>
@@ -37,6 +38,7 @@
     <div class="space-y-2 px-2 pb-3 sm:px-3">
       <a href="<%= root_path %>" class="<%= nav_link_class("home", "block") %>">Home</a>
       <a href="<%= articles_path %>" class="<%= nav_link_class("articles", "block") %>">Articles</a>
+      <a href="<%= users_path %>" class="<%= nav_link_class("users", "block") %>">Users</a>
       <% unless user_signed_in? %>
         <a href="<%= new_user_session_path %>" class="<%= nav_link_class(nil, "block") %>">Sign in</a>
       <% end %>

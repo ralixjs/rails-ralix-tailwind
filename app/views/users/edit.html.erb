@@ -39,5 +39,5 @@
 
 <div class="mt-8">
   <p>Be careful! This action is irreversible.</p>
-  <%= button_to "Delete my account", current_user, method: :delete, class: "btn btn-danger" %>
+  <%= button_to "Delete my account", user_path(current_user), method: :delete, class: "btn btn-danger" %>
 </div>

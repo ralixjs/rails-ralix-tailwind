@@ -14,7 +14,7 @@
   <p>
     <b>Updated at</b>
     <%= time_ago @user.updated_at %>
-    <span class="text-xs text-slate-500"><%= @user.created_at.strftime('%Y-%m-%d %H:%M') %></span>
+    <span class="text-xs text-slate-500"><%= @user.updated_at.strftime('%Y-%m-%d %H:%M') %></span>
   </p>
   <p><b>Articles</b> <%= @user.articles.size %></p>
 </div>

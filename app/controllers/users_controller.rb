@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, except: %i[index show]
+  before_action :authenticate_user!
 
   def index
-    @pagy, @users = pagy(User.order(created_at: :desc), items: 5)
+    @q = User.ransack(params[:q])
+    @pagy, @users = pagy(@q.result.order(created_at: :desc), items: 5)
   end
 
   def show

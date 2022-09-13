@@ -5,9 +5,9 @@
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Created at</th>
+        <th><%= sort_link(@q, :name) %></th>
+        <th><%= sort_link(@q, :email) %></th>
+        <th><%= sort_link(@q, :created_at) %></th>
         <th></th>
       </tr>
     </thead>

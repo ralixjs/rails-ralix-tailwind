@@ -17,3 +17,7 @@ table th, table td {
 table img {
   min-width: 30px;
 }
+
+.table-responsive {
+  @apply overflow-x-auto relative;
+}

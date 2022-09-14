@@ -13,7 +13,7 @@ Powered by:
 
 Rails v7 application template ready to start building your next project, with a pre-configured modern front-end stack and some extras:
 
-- 🎨 Minimalistic and clean layout
+- 🎨 Minimalistic and responsive, clean layout
 - 📦 Icons pack, via [Heroicons](https://heroicons.com)
 - 🔐 Authentication, via [Devise](https://github.com/heartcombo/devise)
 - 👥 Authorization, via [CanCanCan](https://github.com/CanCanCommunity/cancancan)

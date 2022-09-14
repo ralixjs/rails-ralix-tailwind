@@ -17,7 +17,7 @@ export default class ArticlesCtrl extends AppCtrl {
 
       if (this.currentValue != newValue)
         this.currentValue = newValue
-        this.searchForm.requestSubmit()
+        submit(this.searchForm)
     }, 500)
   }
 }

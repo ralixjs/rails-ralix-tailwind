@@ -1,6 +1,6 @@
 # 🚀 Rails + Ralix + Tailwind
 
-> Starter Kit to build Rails applications fast
+> Starter Kit to build modern Rails applications fast
 
 Powered by:
 
@@ -31,7 +31,9 @@ Clone this repository (or use the GitHub *template* button), then `cd` into the 
 > bin/setup
 ```
 
-## Dev
+## Run
+
+Start the development server:
 
 ```
 > bin/dev

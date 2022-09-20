@@ -516,10 +516,10 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-ralix@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ralix/-/ralix-1.0.0.tgz#71967543b9ebfa6c90e7c1fc1301bd194a400831"
-  integrity sha512-h/rdt/A14YobXxAEUjQTDs5AZ5X81VcP7tQBVC2U4DDJ9FSv03gK9n1/HdwzikZNFgbrGvB66nwF3yjMx7APrw==
+ralix@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ralix/-/ralix-1.0.1.tgz#81e760279186f045a48e0016070fe20b0aeefb25"
+  integrity sha512-5UmJKzJTyuZXBx3RvfuRlEb6EszbAAgDNHMBfzjNXsfT3rW4U6A+sBxPxuGRekWqP9vdGkT5F4pYwnUGAeFpQg==
 
 read-cache@^1.0.0:
   version "1.0.0"

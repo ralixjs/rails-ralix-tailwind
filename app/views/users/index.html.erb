@@ -24,7 +24,7 @@
             <%= mail_to user.email, 'data-tippy-content': 'Click to send an email' %>
           </td>
           <td>
-            <%= time_ago user.created_at %>
+            <span data-tippy-content="<%= format_time(user.created_at) %>"><%= time_ago user.created_at %></span>
           </td>
           <td>
             <a data-modal-url="<%= "/users/#{user.id}" %>" data-modal-title="User details" class="btn btn-outline">Details</a>

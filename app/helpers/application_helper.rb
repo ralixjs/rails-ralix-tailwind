@@ -21,4 +21,8 @@ module ApplicationHelper
   def time_ago(time_object)
     "#{time_ago_in_words(time_object)} ago"
   end
+
+  def format_time(time_object)
+    l(time_object, format: :long)
+  end
 end

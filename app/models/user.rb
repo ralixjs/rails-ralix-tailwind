@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :rememberable,
          :validatable
 
+  has_one_attached :avatar
   has_many :articles, dependent: :destroy
 
   def name

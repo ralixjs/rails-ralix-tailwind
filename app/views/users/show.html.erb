@@ -1,11 +1,10 @@
-<img class="rounded-full mx-auto" src="<%= avatar_url(@user.email, 200) %>">
-
 <div class="my-4 text-center">
+  <%= avatar(@user, 200) %>
   <p class="text-2xl"><%= @user.name %></p>
   <p><%= mail_to @user.email %></p>
 </div>
 
-<div class="my-2">
+<div class="my-4">
   <p>
     <b>Created at</b>
     <%= time_ago @user.created_at %>

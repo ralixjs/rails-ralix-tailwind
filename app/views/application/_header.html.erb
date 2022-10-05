@@ -18,7 +18,7 @@
           <div class="relative ml-3">
             <% if user_signed_in? %>
               <a href="<%= edit_user_path %>" class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm">
-                <img class="h-8 w-8 rounded-full" src="<%= avatar_url(current_user.email) %>">
+                <%= avatar(current_user) %>
               </a>
             <% else %>
               <%= link_to "Sign in", new_user_session_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
@@ -48,7 +48,7 @@
         <a href="<%= edit_user_path %>">
           <div class="flex items-center px-5">
             <div class="flex-shrink-0">
-              <img class="h-10 w-10 rounded-full" src="<%= avatar_url(current_user.email) %>">
+              <%= avatar(current_user) %>
             </div>
             <div class="ml-3">
               <div class="text-base font-medium leading-none text-white"><%= current_user.name %></div>

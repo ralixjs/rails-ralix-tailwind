@@ -14,8 +14,8 @@
     <tbody>
       <% @users.each do |user| %>
         <tr>
-          <td>
-            <img class="rounded-full" src="<%= avatar_url(user.email, 50) %>">
+          <td class="text-center">
+            <%= avatar(user, 60) %>
           </td>
           <td>
             <%= user.name %>

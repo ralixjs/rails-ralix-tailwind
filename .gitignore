@@ -19,3 +19,6 @@
 !/app/assets/builds/.keep
 /public/assets
 /node_modules
+
+# Ignore ENV files
+.env

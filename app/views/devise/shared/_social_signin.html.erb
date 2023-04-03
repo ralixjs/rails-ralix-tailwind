@@ -1,0 +1,15 @@
+<div class="social-links flex space-x-2">
+  <%= button_to user_github_omniauth_authorize_path, class: "flex p-4 justify-between inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg social-signin-link", style: "background-color: #333", data: { turbo: "false" } do %>
+    <%= image_tag  "icons/github.svg", class: "h-4 w-4", style: "fill: currentColor;" %>
+    <span class="ml-3">
+      Sign in with Github
+    </span>
+  <% end %>
+
+  <%= button_to user_google_oauth2_omniauth_authorize_path, class: "flex p-4 justify-between inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg social-signin-link", style: "background-color: #ea4335", data: { turbo: "false" } do %>
+    <%= image_tag  "icons/google.svg", class: "h-4 w-4", style: "fill: currentColor;" %>
+    <span class="ml-3">
+      Sign in with Google
+    </span>
+  <% end %>
+</div>

@@ -3,13 +3,28 @@ class User < ApplicationRecord
          :registerable,
          :recoverable,
          :rememberable,
-         :validatable
+         :validatable,
+         :omniauthable,
+         omniauth_providers: [:google_oauth2, :github]
 
   has_one_attached :avatar
   has_many :articles, dependent: :destroy
 
   def name
     @name ||= self[:name].presence || email.split("@").first
+  end
+
+  def self.from_omniauth(access_token)
+    data = access_token.info
+    user = User.where(email: data['email']).first
+
+    unless user
+      user = User.create(name: data['name'],
+        email: data['email'],
+        password: Devise.friendly_token[0,20]
+      )
+    end
+    user
   end
 
   protected

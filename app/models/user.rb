@@ -14,11 +14,12 @@ class User < ApplicationRecord
     @name ||= self[:name].presence || email.split("@").first
   end
 
-  def self.from_omniauth(access_token)
-    data = access_token.info
+  def self.from_omniauth(auth)
+    data = auth.info
+
     User.where(email: data['email']).first_or_create do |user|
       user.name = data['name']
-      user.password = Devise.friendly_token[0,20]
+      user.password = Devise.friendly_token[0,20] if user.new_record?
     end
   end
 

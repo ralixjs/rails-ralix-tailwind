@@ -1,11 +1,11 @@
 <div class="social-links flex space-x-2">
-  <%= button_to user_github_omniauth_authorize_path, class: "social-signin-btn social-signin-btn__github", data: { turbo: "false" } do %>
+  <%= button_to user_github_omniauth_authorize_path, class: "btn btn-github", data: { turbo: "false" } do %>
     <%= image_tag  "icons/github.svg", class: "h-4 w-4" %>
-    <span class="ml-3">Sign in with Github</span>
+    <span class="ml-1">Sign in with Github</span>
   <% end %>
 
-  <%= button_to user_google_oauth2_omniauth_authorize_path, class: "social-signin-btn social-signin-btn__google", data: { turbo: "false" } do %>
+  <%= button_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-google", data: { turbo: "false" } do %>
     <%= image_tag  "icons/google.svg", class: "h-4 w-4" %>
-    <span class="ml-3">Sign in with Google</span>
+    <span class="ml-1">Sign in with Google</span>
   <% end %>
 </div>

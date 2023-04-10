@@ -8,4 +8,9 @@
     <%= image_tag  "icons/google.svg", class: "h-4 w-4" %>
     <span class="ml-1">Sign in with Google</span>
   <% end %>
+
+  <%= button_to user_facebook_omniauth_authorize_path, class: "btn btn-facebook", data: { turbo: "false" } do %>
+    <%= image_tag  "icons/facebook.svg", class: "h-4 w-4" %>
+    <span class="ml-1">Sign in with Facebook</span>
+  <% end %>
 </div>

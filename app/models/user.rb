@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :rememberable,
          :validatable,
          :omniauthable,
-         omniauth_providers: [:google_oauth2, :github]
+         omniauth_providers: [:facebook, :google_oauth2, :github]
 
   has_one_attached :avatar
   has_many :articles, dependent: :destroy

@@ -19,7 +19,13 @@ gem "cssbundling-rails", "~> 1.1"
 gem "turbo-rails", "~> 1.3"
 gem "heroicon", "~> 1.0"
 
+# OmniAuth
+gem 'omniauth-github', '~> 2.0'
+gem 'omniauth-google-oauth2', '~> 1.1.1'
+gem "omniauth-rails_csrf_protection", '~> 1.0.1'
+
 group :development do
   gem "web-console"
   gem "debug"
+  gem "dotenv-rails"
 end

@@ -4,7 +4,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def github
-    omniauth_callback('Github', 'github_data')
+    omniauth_callback('GitHub', 'github_data')
+  end
+
+  def facebook
+    omniauth_callback('Facebook', 'facebook_data')
   end
 
   private

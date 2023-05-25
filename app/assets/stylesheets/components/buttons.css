@@ -18,6 +18,21 @@
   @apply bg-red-600 text-white;
 }
 
+.btn-facebook {
+  background-color: #1877F2;
+  border-color: #1877F2;
+}
+
+.btn-github {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-google {
+  background-color: #EA4335;
+  border-color: #EA4335;
+}
+
 .btn svg {
   display: inline;
   vertical-align: text-top;

@@ -18,6 +18,7 @@ gem "jsbundling-rails", "~> 1.0"
 gem "cssbundling-rails", "~> 1.1"
 gem "turbo-rails", "~> 1.3"
 gem "heroicon", "~> 1.0"
+gem "image_processing", "~> 1.2"
 
 group :development do
   gem "web-console"

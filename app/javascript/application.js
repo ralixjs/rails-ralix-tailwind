@@ -1,6 +1,8 @@
 // Dependencies
 import { RalixApp } from 'ralix'
 import "@hotwired/turbo-rails"
+import "trix"
+import "@rails/actiontext"
 
 // Controllers
 import AppCtrl      from './controllers/app'

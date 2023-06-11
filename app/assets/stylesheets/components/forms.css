@@ -1,4 +1,4 @@
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea {
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]), textarea {
   @apply w-full max-w-lg mt-2 mb-4 block rounded focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
 }
 
@@ -8,8 +8,4 @@ input[type="file"] {
 
 .form-actions {
   @apply flex gap-4 my-4;
-}
-
-trix-editor {
-  @apply bg-white border-gray-500 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
 }

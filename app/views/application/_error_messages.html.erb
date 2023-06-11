@@ -2,7 +2,7 @@
   <div class="my-4 p-4 bg-red-600 text-white rounded">
     <b class="text-xl"><%= pluralize(object.errors.count, "error") %> found:</b>
 
-    <ul>
+    <ul class="list-none">
       <% object.errors.each do |error| %>
         <li><%= error.full_message %></li>
       <% end %>

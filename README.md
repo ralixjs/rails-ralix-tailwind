@@ -18,7 +18,7 @@ Rails v7 application template ready to start building your next project, with a 
 - 🔐 Authentication, via [Devise](https://github.com/heartcombo/devise) + [OmniAuth](https://github.com/omniauth/omniauth) for Social Logins
 - 👥 Authorization, via [CanCanCan](https://github.com/CanCanCommunity/cancancan)
 - 🔍 Searching, via [Ransack](https://github.com/activerecord-hackery/ransack)
-- 📰 Rich text edition, via [Trix](https://trix-editor.org)
+- 📝 Rich text edition, via [Trix](https://trix-editor.org)
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
 - 📄 Static pages controller (About, Terms, ...)
 - 🔴 Custom errors pages: 404, 422, 500

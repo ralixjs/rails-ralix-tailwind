@@ -4,7 +4,6 @@
 @import 'tailwindcss/utilities';
 @import 'tippy.js/dist/tippy.css';
 @import "trix/dist/trix";
-@import './actiontext.css';
 
 /* Components */
 @import 'components/base.css';

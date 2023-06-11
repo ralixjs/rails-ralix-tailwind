@@ -25,3 +25,11 @@ a {
 img {
   display: inline-block;
 }
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}

@@ -3,6 +3,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'tippy.js/dist/tippy.css';
+@import "trix/dist/trix";
 
 /* Components */
 @import 'components/base.css';

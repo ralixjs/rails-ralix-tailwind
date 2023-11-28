@@ -2,10 +2,10 @@ version: '3'
 services:
   db:
     image: postgres
-    volumes:
-      - ./tmp/db:/var/lib/postgresql/data
     env_file:
       - .env
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
   web:
     build: .
     env_file:

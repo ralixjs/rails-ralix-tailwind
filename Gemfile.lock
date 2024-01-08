@@ -138,7 +138,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
-    nio4r (2.5.9)
+    nio4r (2.7.0)
     nokogiri (1.15.2-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.2-x86_64-darwin)
@@ -176,7 +176,7 @@ GEM
     pagy (5.10.1)
       activesupport
     pg (1.5.3)
-    puma (6.3.1)
+    puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.0)
     rack (2.2.7)
@@ -278,7 +278,7 @@ DEPENDENCIES
   omniauth-rails_csrf_protection (~> 1.0)
   pagy (~> 5.10)
   pg (~> 1.4)
-  puma (~> 6.3)
+  puma (~> 6.4)
   rails (~> 7.0)
   ransack (~> 3.2)
   sprockets-rails (~> 3.4)

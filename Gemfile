@@ -4,7 +4,7 @@ ruby File.read(".ruby-version").strip
 
 gem "rails", "~> 7.0"
 gem "pg", "~> 1.4"
-gem "puma", "~> 6.3"
+gem "puma", "~> 6.4"
 gem "bootsnap", "~> 1.13", require: false
 gem "devise", "~> 4.8"
 gem "omniauth-facebook", "~> 9.0"

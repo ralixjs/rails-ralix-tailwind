@@ -13,7 +13,7 @@ gem "omniauth-google-oauth2", "~> 1.1"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem "cancancan", "~> 3.4"
 gem "ransack", "~> 4.2"
-gem "pagy", "~> 5.10"
+gem "pagy", "~> 9.0"
 gem "image_processing", "~> 1.2"
 gem "faker", "~> 3"
 

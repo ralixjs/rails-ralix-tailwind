@@ -12,3 +12,19 @@
 trix-editor {
   @apply bg-white border-gray-500 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
 }
+
+trix-editor .trix-button--remove {
+  @apply w-6 h-6 border-none;
+}
+
+trix-editor .attachment__caption-editor {
+  @apply mt-2 p-1;
+}
+
+trix-editor [data-trix-mutable].attachment img  {
+  @apply box-shadow-none;
+}
+
+trix-toolbar .trix-button.trix-active{
+  @apply bg-indigo-100;
+}

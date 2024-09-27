@@ -10,6 +10,10 @@ input[type="checkbox"], input[type="radio"] {
   @apply p-2 mr-1 rounded-full text-indigo-600 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
 }
 
+input[hidden="true"] {
+  @apply !hidden;
+}
+
 .form-actions {
   @apply flex gap-4 my-4;
 }

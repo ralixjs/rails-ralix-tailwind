@@ -23,6 +23,10 @@ class User < ApplicationRecord
     end
   end
 
+  def self.ransackable_attributes(auth_object = nil)
+    ["name", "email", "created_at"]
+  end
+
   protected
 
   def password_required?

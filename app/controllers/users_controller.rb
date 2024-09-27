@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   def index
     @q = User.ransack(params[:q])
-    @pagy, @users = pagy(@q.result.order(created_at: :desc), items: 5)
+    @pagy, @users = pagy(@q.result.order(created_at: :desc), limit: 10)
   end
 
   def show

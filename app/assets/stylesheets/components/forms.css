@@ -6,6 +6,14 @@ input[type="file"] {
   @apply text-slate-400 bg-white border border-gray-500 cursor-pointer focus:outline-none file:mr-4 file:py-2 file:px-4 file:border-0 file:bg-gray-500 file:text-white hover:file:bg-gray-600;
 }
 
+input[type="checkbox"], input[type="radio"] {
+  @apply p-2 mr-1 rounded-full text-indigo-600 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
+}
+
+input[hidden="true"] {
+  @apply !hidden;
+}
+
 .form-actions {
   @apply flex gap-4 my-4;
 }

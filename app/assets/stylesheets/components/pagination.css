@@ -1,7 +1,7 @@
-.pagination .page {
+.pagy a {
   @apply text-xl p-2;
 }
 
-.pagination .page.active {
+.pagy a.current {
   @apply bg-indigo-600 text-white rounded;
 }

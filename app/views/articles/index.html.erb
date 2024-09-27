@@ -36,6 +36,6 @@
   </div>
 
   <div class="text-center mt-10">
-    <%== pagy_nav(@pagy) %>
+    <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
   </div>
 <% end %>

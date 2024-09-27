@@ -39,3 +39,5 @@ Start the development server:
 ```
 > bin/dev
 ```
+
+And open your browser at [`localhost:3000`](http://localhost:3000).

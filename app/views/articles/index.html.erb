@@ -29,7 +29,10 @@
           <%= truncate strip_tags(article.body.to_s), length: 160 %>
         </div>
         <div class="card-actions">
-          <%= link_to 'Read more', article, class: 'btn btn-outline' %>
+          <%= link_to article, class: 'btn btn-outline' do %>
+            Read more
+            <%= heroicon 'chevron-right' %>
+          <% end %>
         </div>
       </article>
     <% end %>

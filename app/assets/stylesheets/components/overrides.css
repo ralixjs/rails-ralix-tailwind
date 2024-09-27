@@ -22,7 +22,7 @@ trix-editor .attachment__caption-editor {
 }
 
 trix-editor [data-trix-mutable].attachment img  {
-  @apply box-shadow-none;
+  @apply shadow-none;
 }
 
 trix-toolbar .trix-button.trix-active{

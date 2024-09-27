@@ -21,7 +21,7 @@ gem "faker", "~> 3"
 gem "sprockets-rails", "~> 3.4"
 gem "jsbundling-rails", "~> 1.0"
 gem "cssbundling-rails", "~> 1.1"
-gem "turbo-rails", "~> 1.3"
+gem "turbo-rails", "~> 2.0"
 gem "heroicon", "~> 1.0"
 
 group :development do

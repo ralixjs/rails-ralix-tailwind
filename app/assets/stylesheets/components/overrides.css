@@ -10,7 +10,7 @@
 
 /* Trix */
 trix-editor {
-  @apply bg-white border-gray-500 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
+  @apply bg-white min-h-60 border-gray-500 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
 }
 
 trix-editor .trix-button--remove {
@@ -25,6 +25,18 @@ trix-editor [data-trix-mutable].attachment img  {
   @apply shadow-none;
 }
 
+trix-toolbar .trix-button-group {
+  @apply border-gray-500;
+}
+
+trix-toolbar .trix-button {
+  @apply border-none;
+}
+
 trix-toolbar .trix-button.trix-active{
   @apply bg-indigo-100;
+}
+
+trix-toolbar .trix-dialog {
+  @apply top-2 left-2 py-2 rounded border-none;
 }

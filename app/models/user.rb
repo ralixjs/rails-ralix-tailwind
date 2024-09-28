@@ -8,6 +8,7 @@ class User < ApplicationRecord
          omniauth_providers: [:facebook, :google_oauth2, :github]
 
   has_one_attached :avatar
+
   has_many :articles, dependent: :destroy
 
   def name

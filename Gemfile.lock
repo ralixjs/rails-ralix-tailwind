@@ -194,6 +194,11 @@ GEM
     orm_adapter (0.5.0)
     pagy (9.0.9)
     pg (1.5.8)
+    propshaft (1.0.0)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
+      railties (>= 7.0.0)
     psych (5.1.2)
       stringio
     puma (6.4.3)
@@ -258,13 +263,6 @@ GEM
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
-    sprockets (4.2.1)
-      concurrent-ruby (~> 1.0)
-      rack (>= 2.2.4, < 4)
-    sprockets-rails (3.5.2)
-      actionpack (>= 6.1)
-      activesupport (>= 6.1)
-      sprockets (>= 3.0.0)
     stringio (3.1.1)
     thor (1.3.2)
     timeout (0.4.1)
@@ -312,10 +310,10 @@ DEPENDENCIES
   omniauth-rails_csrf_protection (~> 1.0)
   pagy (~> 9.0)
   pg (~> 1.5)
+  propshaft (~> 1.0)
   puma (~> 6.4)
   rails (~> 7.2)
   ransack (~> 4.2)
-  sprockets-rails (~> 3.4)
   turbo-rails (~> 2.0)
   web-console
 
@@ -323,4 +321,4 @@ RUBY VERSION
    ruby 3.3.5p100
 
 BUNDLED WITH
-   2.4.10
+   2.5.20

@@ -18,7 +18,7 @@ gem "image_processing", "~> 1.2"
 gem "faker", "~> 3"
 
 # Front-end
-gem "sprockets-rails", "~> 3.4"
+gem "propshaft", "~> 1.0"
 gem "jsbundling-rails", "~> 1.0"
 gem "cssbundling-rails", "~> 1.1"
 gem "turbo-rails", "~> 2.0"

@@ -273,7 +273,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uri (0.13.1)
+    uri (0.13.2)
     useragent (0.16.11)
     version_gem (1.1.4)
     warden (1.2.9)

@@ -1,7 +1,8 @@
 /* Dependencies */
 @import 'tailwindcss';
-@import 'tippy.js/dist/tippy.css' layer(utilities);
-@import 'trix/dist/trix' layer(utilities);
+@plugin '@tailwindcss/forms';
+@import 'tippy.js/dist/tippy.css';
+@import 'trix/dist/trix';
 
 /* Components */
 @import './components/base.css' layer(utilities);
@@ -12,23 +13,3 @@
 @import './components/cards.css' layer(utilities);
 @import './components/pagination.css' layer(utilities);
 @import './components/overrides.css' layer(utilities);
-
-@plugin '@tailwindcss/forms';
-
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
-}

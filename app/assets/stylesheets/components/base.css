@@ -19,7 +19,7 @@ p {
 }
 
 a {
-  @apply text-indigo-600 outline-none;
+  @apply text-indigo-600 outline-hidden;
 }
 
 img {

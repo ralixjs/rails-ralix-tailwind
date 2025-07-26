@@ -1,17 +1,17 @@
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]), textarea {
-  @apply w-full max-w-lg mt-2 mb-4 block rounded focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
+  @apply w-full max-w-lg mt-2 mb-4 block rounded-sm focus:border-indigo-600 focus:ring-3 focus:ring-indigo-300/50;
 }
 
 input[type="file"] {
-  @apply text-slate-400 bg-white border border-gray-500 cursor-pointer focus:outline-none file:mr-4 file:py-2 file:px-4 file:border-0 file:bg-gray-500 file:text-white hover:file:bg-gray-600;
+  @apply text-slate-400 bg-white border border-gray-500 cursor-pointer focus:outline-hidden file:mr-4 file:py-2 file:px-4 file:border-0 file:bg-gray-500 file:text-white hover:file:bg-gray-600;
 }
 
 input[type="checkbox"], input[type="radio"] {
-  @apply p-2 mr-1 rounded-full text-indigo-600 focus:border-indigo-600 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
+  @apply p-2 mr-1 rounded-full text-indigo-600 focus:border-indigo-600 focus:ring-3 focus:ring-indigo-300/50;
 }
 
 input[hidden="true"] {
-  @apply !hidden;
+  @apply hidden!;
 }
 
 .form-actions {

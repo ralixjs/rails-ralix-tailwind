@@ -3,5 +3,5 @@
 }
 
 .pagy a.current {
-  @apply bg-indigo-600 text-white rounded;
+  @apply bg-indigo-600 text-white rounded-sm;
 }

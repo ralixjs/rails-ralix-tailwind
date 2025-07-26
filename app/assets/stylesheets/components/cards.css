@@ -1,5 +1,5 @@
 .card {
-  @apply rounded bg-white p-4;
+  @apply rounded-sm bg-white p-4;
 }
 
 .card-title a {

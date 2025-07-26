@@ -1,16 +1,15 @@
 /* Dependencies */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
 @import 'tippy.js/dist/tippy.css';
-@import "trix/dist/trix";
+@import 'trix/dist/trix';
 
 /* Components */
-@import 'components/base.css';
-@import 'components/modals.css';
-@import 'components/tables.css';
-@import 'components/buttons.css';
-@import 'components/forms.css';
-@import 'components/cards.css';
-@import 'components/pagination.css';
-@import 'components/overrides.css';
+@import './components/base.css' layer(utilities);
+@import './components/modals.css' layer(utilities);
+@import './components/tables.css' layer(utilities);
+@import './components/buttons.css' layer(utilities);
+@import './components/forms.css' layer(utilities);
+@import './components/cards.css' layer(utilities);
+@import './components/pagination.css' layer(utilities);
+@import './components/overrides.css' layer(utilities);

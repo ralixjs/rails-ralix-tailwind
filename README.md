@@ -11,7 +11,7 @@ Powered by:
 - [Turbo](https://turbo.hotwired.dev)
 - [esbuild](https://esbuild.github.io)
 
-Rails v7 application template ready to start building your next project, with a pre-configured modern front-end stack and some extras:
+Rails v8 application template ready to start building your next project, with a pre-configured modern front-end stack and some extras:
 
 - 🎨 Minimalistic and responsive, clean layout
 - 🎯 Icons pack, via [Heroicons](https://heroicons.com)

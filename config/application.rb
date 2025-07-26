@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module RailsRalixTailwind
   class Application < Rails::Application
     # Load Rails defaults
-    config.load_defaults 7.2
+    config.load_defaults 8.0
 
     # This tells Rails to serve error pages from the app itself, rather than using static error pages in public/
     config.exceptions_app = self.routes

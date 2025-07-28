@@ -103,8 +103,7 @@ GEM
     drb (2.2.3)
     erb (5.0.2)
     erubi (1.13.1)
-    faker (3.5.2)
-      i18n (>= 1.8.11, < 2)
+
     faraday (2.13.4)
       faraday-net_http (>= 2.0, < 3.5)
       json
@@ -311,7 +310,6 @@ DEPENDENCIES
   debug
   devise (~> 4.9)
   dotenv-rails
-  faker (~> 3)
   heroicon (~> 1.0)
   image_processing (~> 1.2)
   jsbundling-rails (~> 1.0)

@@ -703,10 +703,10 @@ picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-ralix@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/ralix/-/ralix-1.7.0.tgz#03f71d8af189cb54e7ea19e10c204e861980f730"
-  integrity sha512-RFtElikMAfivBfaLT3yr8cyw+VDfdinaKXRxAVaUeKfK7na/J3GxkgAkqC1s6cLO5Yrup54kL1Ctha8IWywRUQ==
+ralix@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/ralix/-/ralix-1.8.0.tgz#724555d8ae42cc6c2e69aa80449b4ac5715a82e6"
+  integrity sha512-G+jaGI6YrSugylQGPK7EL5S9mHpJ4wyHiJUv+uszIBlYDKbwauJbn5Pgtu/pBZYmTuMcFEB4C7jlq4jXLYjenQ==
   dependencies:
     dompurify "^3.2.6"
 

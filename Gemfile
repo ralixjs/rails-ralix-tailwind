@@ -15,7 +15,6 @@ gem "cancancan", "~> 3.4"
 gem "ransack", "~> 4.2"
 gem "pagy", "~> 9.3"
 gem "image_processing", "~> 1.2"
-gem "faker", "~> 3"
 
 # Front-end
 gem "propshaft", "~> 1.1"

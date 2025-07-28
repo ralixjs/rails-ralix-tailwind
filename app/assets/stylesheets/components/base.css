@@ -22,6 +22,10 @@ a {
   @apply text-indigo-600 outline-hidden;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 img {
   display: inline-block;
 }

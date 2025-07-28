@@ -7,7 +7,7 @@
     "@tailwindcss/cli": "^4.1.11",
     "@tailwindcss/forms": "^0.5.9",
     "esbuild": "^0.25.0",
-    "micromodal": "^0.4.10",
+    "micromodal": "^0.6.1",
     "ralix": "^1.7.0",
     "tailwindcss": "^4.1.11",
     "tippy.js": "^6.3.7",

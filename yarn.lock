@@ -163,17 +163,17 @@
   integrity sha512-cn3Yr7+OaaZq1c+2pe+8yxC8E144SReCQjN6/2ynubzYjvyqZjTXfQJpAcQpsdJq3My7XADANiYGHoFC69pLQw==
 
 "@hotwired/turbo-rails@^8.0.0":
-  version "8.0.10"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-8.0.10.tgz#28b0c1243868d9efc4a71f4a2ff7d97ee9cefbfa"
-  integrity sha512-BkERfjTbNwMb9/YQi0RL9+f9zkD+dZH2klEONtGwXrIE3O9BE1937Nn9++koZpDryD4XN3zE5U5ibyWoYJAWBg==
+  version "8.0.16"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-8.0.16.tgz#096f3bec8c3c04d4aac4dd0f75305c67b3db3501"
+  integrity sha512-Yxiy2x+N3eOIEDokvLzSrd08aI5RDKnFYDQFl2J/LuMEWTtPdY7oNP0F/gv/sSe5AV23Lwz4FitG/uNFXNM5tA==
   dependencies:
-    "@hotwired/turbo" "^8.0.6"
-    "@rails/actioncable" "^7.0"
+    "@hotwired/turbo" "^8.0.13"
+    "@rails/actioncable" ">=7.0"
 
-"@hotwired/turbo@^8.0.6":
-  version "8.0.10"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-8.0.10.tgz#d95569d259f0daad6e824ee1ada877ff94beb72b"
-  integrity sha512-xen1YhNQirAHlA8vr/444XsTNITC1Il2l/Vx4w8hAWPpI5nQO78mVHNsmFuayETodzPwh25ob2TgfCEV/Loiog==
+"@hotwired/turbo@^8.0.13":
+  version "8.0.13"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-8.0.13.tgz#ab35fda9d358432c8a872a833844b38cccb8c25b"
+  integrity sha512-M7qXUqcGab6G5PKOiwhgbByTtrPgKPFCTMNQ52QhzUEXEqmp0/ApEguUesh/FPiUjrmFec+3lq98KsWnYY2C7g==
 
 "@isaacs/fs-minipass@^4.0.0":
   version "4.0.1"
@@ -311,10 +311,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@rails/actioncable@^7.0":
-  version "7.2.100"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.2.100.tgz#86ec1c2e00c357cef1e421fd63863d5c34339ce8"
-  integrity sha512-7xtIENf0Yw59AFDM3+xqxPCZxev3QVAqjPmUzmgsB9eL8S/zTpB0IU9srNc7XknzJI4e09XKNnCaJRx3gfYzXA==
+"@rails/actioncable@>=7.0":
+  version "8.0.200"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-8.0.200.tgz#1d27d9d55e45266e061190db045925e0b4d53d6b"
+  integrity sha512-EDqWyxck22BHmv1e+mD8Kl6GmtNkhEPdRfGFT7kvsv1yoXd9iYrqHDVAaR8bKmU/syC5eEZ2I5aWWxtB73ukMw==
 
 "@rails/actiontext@^8.0.0":
   version "8.0.200"
@@ -344,9 +344,9 @@
     tailwindcss "4.1.11"
 
 "@tailwindcss/forms@^0.5.9":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.9.tgz#b495c12575d6eae5865b2cbd9876b26d89f16f61"
-  integrity sha512-tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.10.tgz#0a1cd67b6933402f1985a04595bd24f9785aa302"
+  integrity sha512-utI1ONF6uf/pPNO68kmN1b8rEwNXv3czukalo8VtJH8ksIkZXr3Q3VYudZLkCsDd4Wku120uF02hYK25XGPorw==
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
@@ -492,14 +492,7 @@ detect-libc@^2.0.3, detect-libc@^2.0.4:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.4.tgz#f04715b8ba815e53b4d8109655b6508a6865a7e8"
   integrity sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==
 
-dompurify@^3.2.5:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.5.tgz#11b108656a5fb72b24d916df17a1421663d7129c"
-  integrity sha512-mLPd29uoRe9HpvwP2TxClGQBzGXeEC/we/q+bFlmPPmj2p2Ugl3r6ATu/UU1v77DXNcehiBg9zsr1dREyA/dJQ==
-  optionalDependencies:
-    "@types/trusted-types" "^2.0.7"
-
-dompurify@^3.2.6:
+dompurify@^3.2.5, dompurify@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.6.tgz#ca040a6ad2b88e2a92dc45f38c79f84a714a1cad"
   integrity sha512-/2GogDQlohXPZe6D6NOgQvXLPSYBqIWMnZ8zzOhn09REE4eyAzb+Hed3jhoM9OkuaJ8P6ZGTTVWQKAi8ieIzfQ==
@@ -663,10 +656,10 @@ micromatch@^4.0.5:
     braces "^3.0.3"
     picomatch "^2.3.1"
 
-micromodal@^0.4.10:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/micromodal/-/micromodal-0.4.10.tgz#d6f59c21d2f4a5af480f65909eb9608a1d558c73"
-  integrity sha512-BUrEnzMPFBwK8nOE4xUDYHLrlGlLULQVjpja99tpJQPSUEWgw3kTLp1n1qv0HmKU29AiHE7Y7sMLiRziDK4ghQ==
+micromodal@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/micromodal/-/micromodal-0.6.1.tgz#2558c1802317a53e89f7913652a1eb8b91454738"
+  integrity sha512-rw1fOptxQe3XGDm9xil9hBC2ylPb1kKZyYv4FlK54R/7L+KG+D8SQxPL5L8OlEXAhBDHckeoULYxWSYU9rg/RA==
 
 mini-svg-data-uri@^1.2.3:
   version "1.4.4"

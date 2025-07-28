@@ -15,9 +15,10 @@ export default class ArticlesCtrl extends AppCtrl {
     setTimeout(() => {
       const newValue = this.searchInput.value
 
-      if (this.currentValue != newValue)
+      if (this.currentValue != newValue) {
         this.currentValue = newValue
         submit(this.searchForm)
+      }
     }, 500)
   }
 }

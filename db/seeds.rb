@@ -1,18 +1,20 @@
+require_relative 'seed_data'
+
 if User.none?
-  10.times do
+  SeedData::USERS.each do |user_data|
     User.create!(
-      name: Faker::Name.name,
-      email: Faker::Internet.email,
+      name: user_data[:name],
+      email: user_data[:email],
       password: "1234asdf"
     )
   end
 end
 
 if Article.none?
-  20.times do
+  SeedData::ARTICLES.each do |article_data|
     Article.create!(
-      title: Faker::Commerce.product_name,
-      body: Faker::Lorem.paragraphs(number: 5).join,
+      title: article_data[:title],
+      body: article_data[:body],
       user: User.all.sample
     )
   end

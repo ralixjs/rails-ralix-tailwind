@@ -5,7 +5,7 @@ ruby File.read(".ruby-version").strip
 # Core
 gem "rails", "~> 8.0"
 gem "pg", "~> 1.5"
-gem "puma", "~> 6.6"
+gem "puma", "~> 7.2"
 gem "bootsnap", "~> 1.18", require: false
 gem "ransack", "~> 4.2"
 gem "pagy", "~> 9.3"

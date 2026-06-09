@@ -161,7 +161,7 @@ GEM
       timeout
     net-smtp (0.5.1)
       net-protocol
-    nio4r (2.7.4)
+    nio4r (2.7.5)
     nokogiri (1.19.3-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.3-x86_64-darwin)
@@ -210,7 +210,7 @@ GEM
     psych (5.3.1)
       date
       stringio
-    puma (6.6.0)
+    puma (7.2.1)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.6)
@@ -324,7 +324,7 @@ DEPENDENCIES
   pagy (~> 9.3)
   pg (~> 1.5)
   propshaft (~> 1.1)
-  puma (~> 6.6)
+  puma (~> 7.2)
   rails (~> 8.0)
   ransack (~> 4.2)
   turbo-rails (~> 2.0)
